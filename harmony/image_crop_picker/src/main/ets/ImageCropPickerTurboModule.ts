@@ -635,7 +635,7 @@ export class ImageCropPickerTurboModule extends TurboModule implements TM.ImageC
 
   isImage(filePath: string): boolean {
     Logger.info(`${TAG} into isImage fileName = ${filePath}`);
-    const imageExtensionsRegex = /\.(jpg|jpeg|png|gif|bmp|webp)$/i;
+    const imageExtensionsRegex = /\.(jpg|jpeg|png|gif|bmp|webp|heic)$/i;
     return imageExtensionsRegex.test(filePath);
   }
 
